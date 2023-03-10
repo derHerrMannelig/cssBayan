@@ -5,11 +5,17 @@ h1,
 #bayan{
     margin-left: auto;
     margin-right: auto;
-    width: 18em;
+    width: 20em;
     font: bold 24px/1.5 Arial, sans-serif;
 }
 #header{
-    margin-top: 25px;
+    margin-top: 1em;
+}
+img{
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #bayan li{
     background-color: #ffffff;
@@ -19,4 +25,13 @@ h1,
     border-left: none;
     padding: 10px;
     margin: 5px auto;
+}
+input{
+    display: none;
+}
+input + label + .accordionItemContent{
+    display: none;
+}
+input:checked + label + .accordionItemContent{
+    display: block;
 }
