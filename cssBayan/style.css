@@ -1,6 +1,5 @@
 /*
-Styles by default are optimized for 1080p.
-Orientation: landscape.
+Styles by default are optimized for PCs (desktop 1920x1080).
 */
 body{
     background-color: #c8e8c8;
@@ -84,9 +83,11 @@ input:active + label > .icon{
         rotate: -90deg;
     }
 }
+/*
+Breakpoint for 320p (mobile 320x568).
+*/
 @media (min-width: 320px) and
-(min-height: 568px) and
-(orientation: portrait) {
+(max-width: 720px){
     body{
         width: 19rem;
     }
@@ -100,9 +101,11 @@ input:active + label > .icon{
         margin-left: 0.5rem;
     }
 }
-@media (min-width: 820px) and
-(min-height: 1180px) and
-(orientation: portrait) {
+/*
+Breakpoint for 720p (tablet 820x1180).
+*/
+@media (min-width: 720px) and
+(max-width: 1280px){
     body{
         width: 26rem;
     }
