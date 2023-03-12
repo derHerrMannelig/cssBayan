@@ -10,7 +10,7 @@ h1{
 }
 h2{
     font: bold 1.5rem Arial, sans-serif;
-    color: #778877;
+    color: #889988;
     display: inline-block;
     width: 14rem;
     transition: 0.75s;
@@ -55,7 +55,7 @@ input:active + label > .meme{
     opacity: 70%;
 }
 input:active + label > h2{
-    color: #778877;
+    color: #889988;
 }
 input:active + label > .icon{
     opacity: 35%;
