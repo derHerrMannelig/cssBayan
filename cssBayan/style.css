@@ -33,8 +33,13 @@ img{
     margin-left: auto;
     margin-right: auto;   
 }
-input:checked + label > img,
-input:hover + label > img{
+input:checked + label > img{
     width: 75%;
     transition: 0.5s;
+}
+@media (hover: hover) {
+    input:hover + label > img{
+        width: 75%;
+        transition: 0.5s;
+    }
 }
