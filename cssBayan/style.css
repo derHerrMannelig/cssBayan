@@ -1,5 +1,5 @@
 body{
-    background-color: #c8e7c8;
+    background-color: #c8e8c8;
     margin-left: auto;
     margin-right: auto;
     width: 30rem;
@@ -10,10 +10,10 @@ h1{
 }
 h2{
     font: bold 1.5rem Arial, sans-serif;
-    color: #585858;
+    color: #778877;
     display: inline-block;
     width: 14rem;
-    transition: 0.5s;
+    transition: 0.75s;
 }
 li{
     background-color: #ffffff;
@@ -33,12 +33,12 @@ label{
 .icon{
     width: 1.1rem;
     margin-left: 12.5rem;
-    transition: 0.5s;
+    transition: 0.75s;
 }
 .meme{
     display: block;
     width: 0%;
-    transition: 0.5s;
+    transition: 0.75s;
     margin-left: auto;
     margin-right: auto;   
 }
@@ -55,7 +55,7 @@ input:active + label > .meme{
     opacity: 70%;
 }
 input:active + label > h2{
-    color: orange;
+    color: #778877;
 }
 input:active + label > .icon{
     opacity: 35%;
@@ -66,6 +66,9 @@ input:active + label > .icon{
     }
     .icon{
         opacity: 0%;
+    }
+    ul:hover label{
+        cursor: pointer;
     }
     ul:hover .icon{
         opacity: 100%;
