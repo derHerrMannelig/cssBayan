@@ -1,5 +1,5 @@
 /*
-Styles by default are optimized for 1080p. 
+Styles by default are optimized for 1080p.
 Orientation: landscape.
 */
 body{
@@ -44,7 +44,7 @@ label{
     width: 0%;
     transition: 0.75s;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
 input:checked + label > .meme{
     width: 75%;
@@ -84,8 +84,8 @@ input:active + label > .icon{
         rotate: -90deg;
     }
 }
-@media (min-width: 320px) and 
-(min-height: 568px) and 
+@media (min-width: 320px) and
+(min-height: 568px) and
 (orientation: portrait) {
     body{
         width: 19rem;
@@ -100,8 +100,8 @@ input:active + label > .icon{
         margin-left: 0.5rem;
     }
 }
-@media (min-width: 820px) and 
-(min-height: 1180px) and 
+@media (min-width: 820px) and
+(min-height: 1180px) and
 (orientation: portrait) {
     body{
         width: 26rem;
@@ -115,4 +115,4 @@ input:active + label > .icon{
     .icon{
         margin-left: 7.5rem;
     }
-}  
+}
