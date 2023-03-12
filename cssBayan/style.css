@@ -10,6 +10,9 @@ h1{
 }
 h2{
     font: bold 1.5rem Arial, sans-serif;
+    color: #586458;
+    display: inline-block;
+    width: 14rem;
 }
 li{
     background-color: #ffffff;
@@ -26,20 +29,45 @@ input{
 label{
     display: block;
 }
-img{
+.icon{
+    width: 4%;
+    margin-left: 12.5rem;
+    transition: 0.5s;
+}
+.meme{
     display: block;
     width: 0%;
     transition: 0.5s;
     margin-left: auto;
     margin-right: auto;   
 }
-input:checked + label > img{
+input:checked + label > .meme{
     width: 75%;
     transition: 0.5s;
 }
+input:checked + label > h2{
+    color: black;
+}
+input:checked + label > .icon{
+    rotate: -90deg;
+    transition: 0.5s;
+}
 @media (hover: hover) {
-    input:hover + label > img{
+    input:hover + label > .meme{
         width: 75%;
+        transition: 0.5s;
+    }
+    .icon{
+        display: none;
+    }
+    ul:hover .icon{
+        display: inline
+    }
+    ul:hover h2{
+        color: black;
+    }
+    input:hover + label > .icon{
+        rotate: -90deg;
         transition: 0.5s;
     }
 }
