@@ -1,3 +1,7 @@
+/*
+Styles by default are optimized for 1080p. 
+Orientation: landscape.
+*/
 body{
     background-color: #c8e8c8;
     margin-left: auto;
@@ -12,7 +16,7 @@ h2{
     font: bold 1.5rem Arial, sans-serif;
     color: #889988;
     display: inline-block;
-    width: 14rem;
+    width: 15rem;
     transition: 0.75s;
 }
 li{
@@ -32,7 +36,7 @@ label{
 }
 .icon{
     width: 1.1rem;
-    margin-left: 12.5rem;
+    margin-left: 11.5rem;
     transition: 0.75s;
 }
 .meme{
@@ -83,8 +87,32 @@ input:active + label > .icon{
 @media (min-width: 320px) and 
 (min-height: 568px) and 
 (orientation: portrait) {
+    body{
+        width: 19rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    .icon{
+        margin-left: 0.5rem;
+    }
 }
 @media (min-width: 820px) and 
 (min-height: 1180px) and 
 (orientation: portrait) {
-}
+    body{
+        width: 30rem;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    .icon{
+        margin-left: 11.5rem;
+    }
+}  
