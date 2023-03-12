@@ -1,0 +1,121 @@
+/*
+Styles by default are optimized for PCs (desktop 1920x1080).
+*/
+body{
+    background-color: #c8e8c8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+}
+h1{
+    margin-top: 1.5rem;
+    font: bold 1.75rem Arial, sans-serif;
+}
+h2{
+    font: bold 1.5rem Arial, sans-serif;
+    color: #889988;
+    display: inline-block;
+    width: 15rem;
+    transition: 0.75s;
+}
+li{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #676767;
+    border-top: none;
+    border-left: none;
+    padding: 0.5rem;
+    margin: 0.3rem auto 0.3rem;
+}
+input{
+    display: none;
+}
+label{
+    display: block;
+}
+.icon{
+    width: 1.1rem;
+    margin-left: 11.5rem;
+    transition: 0.75s;
+}
+.meme{
+    display: block;
+    width: 0%;
+    transition: 0.75s;
+    margin-left: auto;
+    margin-right: auto;
+}
+input:checked + label > .meme{
+    width: 75%;
+}
+input:checked + label > h2{
+    color: black;
+}
+input:checked + label > .icon{
+    rotate: -90deg;
+}
+input:active + label > .meme{
+    opacity: 70%;
+}
+input:active + label > h2{
+    color: #889988;
+}
+input:active + label > .icon{
+    opacity: 35%;
+}
+@media (hover: hover) {
+    input:hover + label > .meme{
+        width: 75%;
+    }
+    .icon{
+        opacity: 0%;
+    }
+    ul:hover label{
+        cursor: pointer;
+    }
+    ul:hover .icon{
+        opacity: 100%;
+    }
+    ul:hover h2{
+        color: black;
+    }
+    input:hover + label > .icon{
+        rotate: -90deg;
+    }
+}
+/*
+Breakpoint for 320p (mobile 320x568).
+*/
+@media (min-width: 320px) and
+(max-width: 720px){
+    body{
+        width: 19rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    .icon{
+        margin-left: 0.5rem;
+    }
+}
+/*
+Breakpoint for 720p (tablet 820x1180).
+*/
+@media (min-width: 720px) and
+(max-width: 1280px){
+    body{
+        width: 26rem;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    .icon{
+        margin-left: 7.5rem;
+    }
+}
